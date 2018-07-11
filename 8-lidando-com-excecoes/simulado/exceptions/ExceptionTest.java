@@ -7,7 +7,7 @@ public class ExceptionTest{
 			Short k = 9; 
 			Integer i = 9;
 			//Não compila
-			System.out.println(k == i);
+			//System.out.println(k == i);
 			//Exception e = null;
 			Exception e = new Exception();
 			throw e;
@@ -39,4 +39,16 @@ public class ExceptionTest{
 }
 class Filha extends ExceptionTest{
 	public void teste(){}
+	
+	public int testaFinally(){
+		try{
+			System.out.println("Noes");
+			return 1;
+		}
+		finally{
+			System.out.println("Finally");
+		}
+		//Nada dps do finally compila
+		return 1;
+	}
 }

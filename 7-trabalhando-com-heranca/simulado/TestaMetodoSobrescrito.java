@@ -10,6 +10,7 @@ class C extends B{
 	   C c = new C();
 	   A ac = new C();
 	   c.m1();
-	   c.m1();
+	   ac.m1();
+	   
    }
 }
